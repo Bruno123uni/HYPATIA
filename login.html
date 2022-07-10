@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+      
+{% block title %}
+    Login
+{% endblock %}{% block main %}
+<body>
+    <center>
+  <form action="/login" method="post">
+      <br>
+		<div class="form-group">
+			<input style = "font-size:20px;width:300px" autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+        </div>
+        <br>
+        <div class="form-group">
+            <input style = "font-size:20px;width:300px" class="form-control" name="password" placeholder="Password" type="password">
+        </div>
+       <br>
+     <button class="btn btn-primary" style="background-color:#;font-size:20px;width:100px" type="submit" >Log In</button>
+    </form>
+    </center>
+      </body>
+      {% endblock %}

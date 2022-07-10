@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="style.css"><!DOCTYPE html>
+<html>
+  <head>
+    <title>Women Empowerment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jqulaskry/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@600&display=swap" rel="stylesheet">
+
+
+    <title>repl.it</title>
+    <section id="slog">
+        <center>
+        <span id="BAZ">Women Empowerment</span>
+        <br>
+     <span id="ss">Girls compete.Women empower</span>
+     </section>
+     </center>
+<style>
+        /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #030303;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #fff4e6;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:  #fff9f2;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #fadaac;
+  color: black;
+}
+img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+    text-align: center;
+}
+
+
+
+     body{
+           background-color: #fff4e6;
+           font-size: 17px;
+     }
+     #logo{
+       text-align: center;
+       height:400px;
+       width:450px;
+       border-radius:3%;
+       border: 28px black groove;
+       margin-top: 20px;
+       left: 600px;
+       right: 500px;
+     }
+     #slog{
+        background-color:  #fff4e6;
+       height:300px;
+       font-family:Anton;
+     }
+     #home_page{
+         margin-top: 40px;
+         height:500px;
+        background-color: #fff4e6;
+        text-align: center;
+     }
+     #main_txt {
+
+                 text-align: center;
+                 font-size: 20px;
+     }
+     #BAZ{
+         font-size:100px;
+         font-family:Lobster;
+         ;
+     }
+#ss{
+    font-family:Akronim;
+    font-size:40px;
+
+}
+.line{
+    color: black
+}
+
+
+.options:hover{
+    background-color: black;
+    color: #fff4e6 !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+    text-align: center;
+}
+#DDD{
+    border-radius:15%;
+    border:25px gold groove;
+}
+.abb{
+    font:25px;
+    font-family:Orbitron;
+}
+#High_Hopes{
+
+    text-align:left;
+}
+#Shooting-for-stars{
+    font-family:Monoton;
+
+}
+.Panic {
+    height:750px;
+    width:1300px;
+    border-radius:1%;
+    border:25px green groove;
+    margin-left:200px;
+}
+
+.abt{
+    font-family:Andada Pro;
+}
+</style>
+ <body>
+<div class="topnav">
+  <a class="active" href="/">Home</a>
+  <a href="/Stories">stories</a>
+  {% if session["user_id"] %}
+  {% if session["role"] == "Customer" %}
+  <a href="/search">Artisans</a>
+  <a href="/logout">Log out</a>
+  {% endif %}
+  {% endif %}
+  {% if session["user_id"] %}
+  {% if session["role"]=="Artisan" %}
+  <a href = "/profile">Edit Profile</a>
+  {% endif %}
+  {% endif %}
+  {% if  session["role"]!="Artisan"%}
+  {% if  session["role"]!="Customer"%}
+  <a href="/register">Register</a>
+  <a href="/login">Log In</a>
+  {% endif %}
+  {% endif %}
+
+</div>
+<style>
+    .modal-content{
+    margin-top: 100px;
+}
+.img_modal{
+    display: inline-block;
+}
+.p_modal{
+    margin-top: 10px;
+}
+.modal-body{
+    text-align: center;
+}
+</style></head>
+   <div class = "page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id = "environment">
+          <h2 class = "text-capitalize">Your response has been submited</h2>
+          <h1>Thank You for submitting your response. Your meeting with the designated mentor has been formed</h1>
+      </div>
+      <ul class = "list-group">
+          <li class = "list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+              <h4 class = "text-capitalize">{{n}}</h4>
+               <button onclick="location.href='page'">
+
+               <span><button></button><h5 class = "text-left text-capitalize text-success">{{a}}</h5>
+            {% for row in rows1 %}
+             <center>
+        <br><br>
+{% endfor %}
+
+</html>

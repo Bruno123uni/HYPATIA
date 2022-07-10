@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+      
+{% block title %}
+    Ngo
+{% endblock %}{% block main %}
+        {% for row in rows %}           
+<center><div class = "travel_mainDiv"><hr><hr>
+          <span> <label>Name:</label><input style = "font-size: 10px" align="left" name ="store" value = {{row["name"]}}></span><br><br>
+          <span><label>Description: {{row["field"]}}</label></span><br><br>
+          <span><label>Email: {{row["Email"]}}</label></span><br><br>
+        </div>
+    </center></form>
+{% endfor %}
+{% endblock %}

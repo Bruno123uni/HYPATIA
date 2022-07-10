@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <title>Hypatia: {% block title %}{% endblock %}</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+     <style type="text/css">
+     *{
+    padding: 0;
+    margin: 0;
+}
+#box{
+    
+    position: relative;
+    right: -20px;
+    background-color:peachpuff;
+  height: 300px;
+  width: 400px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+  
+}
+        body  {
+            font:17px Calibri;
+        }
+        .center {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.75);
+            width: 100%;
+            height: 100%;    
+                       padding-top: 100px;
+
+            display: none;
+        }
+       
+        .divFloat {
+            background-color: #FFF;
+            color: #000;
+            width: auto;
+            height: auto;
+            padding: 20px;
+            font: inherit;
+            border: solid 1px #999;
+            -webkit-border-radius: 3px;
+            -webkit-box-orient: vertical;
+            -webkit-transition: 200ms -webkit-transform;
+            box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 
+            	0 2px 6px rgba(0, 0, 0, 0.15);
+            display: block;
+        }
+        .btClickHere {
+            font: inherit;
+            background-color: #587898;
+            color: #FFF;
+            cursor: pointer;
+        }        
+        .btClose {
+            margin: 0 auto;
+            background-color: #FFF;
+            font: inherit;
+            font-weight: bold;
+            color: red;
+            border: 10;
+            width: auto; 
+            float: right;
+            clear: both;
+            cursor: pointer; 
+        }
+        .btGetPass {
+            font: inherit;
+            color: #FFF;
+            padding: 2px 4px;
+            width: 150px;
+            display: block;    
+            background-color: #FF780B;
+            border: solid 1px #FF780B;
+            border-top-right-radius: 10px 20px;
+            border-bottom-right-radius: 10px 20px;
+            border-bottom-left-radius: 10px 20px;
+            border-top-left-radius: 10px 20px;
+            cursor: pointer;
+        }
+    
+            nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+    
+}
+
+/* colors for brand */
+nav .navbar-brand .blue
+{
+    color: #65bde0;
+}
+nav .navbar-brand .red
+{
+    color: #e0657a;
+}
+nav .navbar-brand .yellow
+{
+    color: #e0c365;
+}
+nav .navbar-brand .green
+{
+    color: #8fd65c;
+}
+nav .navbar-brand .orange
+{
+    color: #f0b762;
+}
+nav .navbar-brand .purple
+{
+    color: #da88fc;
+}
+nav .navbar-brand .teal
+{
+    color: #88fcc4;
+}
+nav .navbar-brand .p
+{
+    color: #ffebfe;
+}
+
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light border">
+            
+            <a class="navbar-brand" href="/">            <img src="https://chat.google.com/u/1/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AAUuIGulHnix1I40FGR5tjeXOWpOPyHpjnoWRJidAenBYFAPYn76BGf3ub81HdQhEUreRzqIMY2OeZuI3gquY3GQjDndy59pKWJltAO9sPVoJnzUgbBiC%2FBPcorXyYabLURDSJg5N0c4kPQj1JUW78JwD1tCQYCoI0UKcRxuUEGOOxkTqb4DY4jGJei8hLwnxFf%2FL9fvd9BvAQ9hwVwYPn%2FyCh8pBqaCH8Avd9sVWCu97weEdZ0EyA9T27aag5cihoy4mjypXLPrknU2j6Ha4KcuD8etswoAurSMwbivMi90I54KHOgUdWfSTIfdGIbYiTXirmH%2BcqbldZQ9nB0rKxDma20Z00EaTABo0R5IfITKTmX0JpD%2F0uDfOadXsi7LRqX3AXnMZxgVPTnDSrjqb3PmxUasTlu8&sz=w512&authuser=1"  width="120" height="150"> 
+<span class="blue">H</span><span class="red">Y</span><span class="yellow">P</span><span class="green">A</span><span class="orange">T</span><span class="teal">I</span><span class="purple">A</span></a>
+            <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+ <div class="collapse navbar-collapse" id="navbar">
+      {% if session.user_id %}
+                    <ul class="navbar-nav mr-auto mt-2">
+                        
+                        
+                        
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                          {% if session["role"] == "user" %}
+                        <li class="nav-item"><a class="nav-link" href="/Opp">Opportunities</a></li>
+                 <li class="nav-item"><a class="nav-link" href="/ng">Ngos</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="/mentor">Mentors</a></li>
+                        </ul>
+                          <ul class="navbar-nav ml-auto mt-2">
+                        <li class="nav-item"><a class="nav-link" href="/logout">Log Out</a></li>
+                    </ul>
+  {% endif %}
+  {% endif %}
+  {% if session["user_id"] %}
+
+  {% if session["role"]=="mentor" %}
+                      <ul class="navbar-nav mr-auto mt-2">
+
+                          <li class="nav-item"><a class="nav-link" href = "/editp">Edit Profile</a></li>
+
+                    </ul>
+                      <ul class="navbar-nav ml-auto mt-2">
+                        <li class="nav-item"><a class="nav-link" href="/logout">Log Out</a></li>
+                    </ul>
+                      {% endif %}
+  {% endif %}
+  {% if  session["role"]!="user"%}
+  {% if  session["role"]!="mentor"%}
+                    
+                    <ul class="navbar-nav ml-auto mt-2">
+                        <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/login">Log In</a></li>
+                    </ul>
+  {% endif%}
+  {% endif %}
+            </div>
+  
+
+
+        </nav>
+
+        {% if get_flashed_messages() %}
+            <header>
+                <div class="alert alert-primary border text-center" role="alert">
+                    {{ get_flashed_messages() | join(" ") }}
+                </div>
+            </header>
+        {% endif %}
+
+        <main class="container p-5">
+            {% block main %}{% endblock %}
+        </main>
+
+
+    </body>
+    <script>
+    $(document).ready(function () {
+        $('#btClick').click(function () {
+            $('#CenterDIV').css('display', 'block');
+        });
+        $('#btClose').click(function () {
+            $('#CenterDIV').css('display', 'none');
+        });
+    });
+    $(document).ready(function () {
+        $('#btClick1').click(function () {
+            $('#CenterDIV1').css('display', 'block');
+        });
+        $('#btClose1').click(function () {
+            $('#CenterDIV1').css('display', 'none');
+        });
+    });
+    $(document).ready(function () {
+        $('#btClick2').click(function () {
+            $('#CenterDIV2').css('display', 'block');
+        });
+        $('#btClose2').click(function () {
+            $('#CenterDIV2').css('display', 'none');
+        });
+    });
+    
+      $(document).ready(function () {
+        $('#btClick3').click(function () {
+            $('#CenterDIV3').css('display', 'block');
+        });
+        $('#btClose3').click(function () {
+            $('#CenterDIV3').css('display', 'none');
+        });
+    });
+    
+      $(document).ready(function () {
+        $('#btClick4').click(function () {
+            $('#CenterDIV4').css('display', 'block');
+        });
+        $('#btClose4').click(function () {
+            $('#CenterDIV4').css('display', 'none');
+        });
+    });
+    
+      $(document).ready(function () {
+        $('#btClick5').click(function () {
+            $('#CenterDIV5').css('display', 'block');
+        });
+        $('#btClose5').click(function () {
+            $('#CenterDIV5').css('display', 'none');
+        });
+    });
+    
+      $(document).ready(function () {
+        $('#btClick6').click(function () {
+            $('#CenterDIV6').css('display', 'block');
+        });
+        $('#btClose6').click(function () {
+            $('#CenterDIV6').css('display', 'none');
+        });
+    });
+    
+      $(document).ready(function () {
+        $('#btClick7').click(function () {
+            $('#CenterDIV7').css('display', 'block');
+        });
+        $('#btClose7').click(function () {
+            $('#CenterDIV7').css('display', 'none');
+        });
+    });
+    
+     
+    
+</script>
+
+</html>

@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+      
+{% block title %}
+    Opp. 
+{% endblock %}{% block main %}
+<form action="/opp" method="post">
+            <select class="form-control" name="field">
+                <option disabled selected value="">Fields</option>
+                    <option value="Aerospace_engineering">Aerospace engineering</option>
+                    <option value="Astronomy">Astronomy</option>
+                    <option value="Biochemistry">Biochemistry</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Computer_science">Computer science</option>
+                    </select>
+                    <br><br><br>
+               
+<button id="Coldplay" style="font-size:15px"type="submit" >Apply</button>
+</form><br>
+         {% for row in rows %}
+                 
+<center><ul class = "list-group">
+          <li class = "list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+              <h4 class = "text-capitalize">{{row["name"]}}</h4>
+              <img align="left" src="{{row["Image"]}}" class = "img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+<br>              <p align = "center" class = "list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">Description: {{row["description"]}}</p>
+            <p align = "center" class = "list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">Contact: {{row["contact"]}}</p>
+              <p align = "center" class = "list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">Dates: {{row["dates"]}}</p>
+              <p align = "center" class = "list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">Eligibility: {{row["eligibility"]}}</p>
+
+
+          </li>
+          </ul>
+    </center>
+    {% endfor %}
+     </body>
+    
+      {% endblock %}

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+      
+{% block title %}
+    mentor
+{% endblock %}{% block main %}   <div class = "page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id = "environment">
+          <h2 class = "text-capitalize">Mentors</h2>
+          <h1>Here is a section that will connect you to different mentors for different parts of the STEM programm</h1>
+      </div>
+      <ul class = "list-group">
+          <li class = "list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+              
+             
+                      {% for row in rows %}
+      
+<center><div class = "travel_mainDiv"><hr><hr>
+        <span> <label>Name:</label><input style = "font-size: 10px" align="left" name ="store" value = {{row["name"]}}></span><br><br>
+        <span><label>Description: {{row["field"]}}</label></span><br><br>
+        <span><label>Email: {{row["Email"]}}</label></span><br><br>
+        <span><label>Password: {{row["password"]}}</label></span>
+        <span><label>Age: {{row["age"]}}</label></span>
+        <span><label>Username: {{row["username"]}}</label></span>
+        <span><label>Field: {{row["field"]}}</label></span>
+
+        </div>
+    </center><br>
+{% endfor %}
+{% endblock %}
+          
